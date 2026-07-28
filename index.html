@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sachin K C | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.85);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:100px 10%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero h1 span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:20px 0;
+line-height:1.8;
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.profile{
+width:340px;
+height:340px;
+border-radius:50%;
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:120px;
+font-weight:bold;
+box-shadow:0 0 35px #38bdf8;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+}
+
+.bar{
+height:8px;
+background:#334155;
+border-radius:20px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.project h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+height:auto;
+padding-top:120px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.profile{
+width:250px;
+height:250px;
+font-size:90px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+header{
+padding:18px 6%;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Sachin.</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Sachin K C</span></h1>
+
+<h2>BCA Student | Python Developer | AI Enthusiast</h2>
+
+<p>
+I'm a BCA student passionate about Python, Artificial Intelligence,
+Data Science and Full Stack Development.
+I enjoy building practical software projects and continuously improving my programming skills.
+</p>
+
+<a class="btn" href="#projects">View Projects</a>
+
+<a class="btn" href="#">Download Resume</a>
+
+</div>
+
+<div class="profile">
+S
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Education</h3>
+
+<br>
+
+<p>
+Bachelor of Computer Applications (BCA)
+
+Interested in Software Development,
+Artificial Intelligence,
+Machine Learning and Web Development.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Career Goal</h3>
+
+<br>
+
+<p>
+Seeking internship opportunities where I can apply my programming knowledge,
+learn modern technologies and contribute to real-world software projects.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+Python
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+HTML & CSS
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+<div class="skill">
+C Programming
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+Git & GitHub
+<div class="bar"><div class="fill" style="width:60%"></div></div>
+</div>
+
+<div class="skill">
+Data Analysis
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Electricity Bill Management</h3>
+
+<p>
+
+A C programming project that calculates electricity bills using slab rates.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Python Data Analysis</h3>
+
+<p>
+
+Analyzed datasets using Python libraries and generated useful insights.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Portfolio Website</h3>
+
+<p>
+
+Responsive personal portfolio developed using HTML, CSS and JavaScript.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>Email</p>
+
+<p>
+
+<a href="mailto:yourmail@example.com">
+
+yourmail@example.com
+
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+GitHub:
+<a href="#">github.com/yourusername</a>
+
+</p>
+
+<br>
+
+<p>
+
+LinkedIn:
+<a href="#">linkedin.com/in/yourname</a>
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Sachin K C | Portfolio
+
+</footer>
+
+<script>
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:'translateY(50px)'},
+
+{opacity:1,transform:'translateY(0)'}
+
+],{
+
+duration:800,
+
+fill:'forwards'
+
+});
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section,.card,.project,.skill").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
